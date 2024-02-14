@@ -123,3 +123,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define HOLD_ON_OTHER_KEY_PRESS_PER_KEY
 
 #define BOTH_SHIFTS_TURNS_ON_CAPS_WORD
+
+#define DYNAMIC_MACRO_SIZE 32
+#define DYNAMIC_MACRO_NO_NESTING

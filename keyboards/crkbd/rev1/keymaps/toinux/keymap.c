@@ -205,16 +205,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 //  ,-----------------------------------------------------.                    ,-----------------------------------------------------.
 //  |  Reset |        |        |        |        | Print  |                    | Num    | Caps   | Scroll |        |        |        |
 //  |--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-//  | On/Off | Hue ↑  | Sat ↑  | Brght ↑|        |        |                    |        |        |        |        |        |        |
+//  | On/Off | Hue ↑  | Sat ↑  | Brght ↑|        |        |                    |        | DM_REC1| DM_PLY1|        |        |        |
 //  |--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-//  | Cycle  | Hue ↓  | Sat ↓  | Brght ↓|        |        |                    |        |        |        |        |        |        |
+//  | Cycle  | Hue ↓  | Sat ↓  | Brght ↓|        |        |                    |        | DM_REC2| DM_PLY2|        |        |        |
 //  `--------+--------+--------+--------+--------+--------+--------.  .--------+--------+--------+--------+--------+--------+--------'
 //                                      |        |        |        |  |        |        |        |
 //                                      `--------------------------'  `--------------------------'
   [_ADJUST] = LAYOUT_split_3x6_3(
       QK_BOOT, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_PSCR,                       KC_NUM, KC_CAPS, KC_SCRL, XXXXXXX, XXXXXXX, XXXXXXX,
-      RGB_TOG, RGB_HUI, RGB_SAI, RGB_VAI, XXXXXXX, XXXXXXX,                      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
-      RGB_MOD, RGB_HUD, RGB_SAD, RGB_VAD, XXXXXXX, XXXXXXX,                      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+      RGB_TOG, RGB_HUI, RGB_SAI, RGB_VAI, XXXXXXX, XXXXXXX,                      XXXXXXX, DM_REC1, DM_PLY1, XXXXXXX, XXXXXXX, XXXXXXX,
+      RGB_MOD, RGB_HUD, RGB_SAD, RGB_VAD, XXXXXXX, XXXXXXX,                      XXXXXXX, DM_REC2, DM_PLY2, XXXXXXX, XXXXXXX, XXXXXXX,
                                           _______, _______, _______,    _______, _______, _______
   )
 };
