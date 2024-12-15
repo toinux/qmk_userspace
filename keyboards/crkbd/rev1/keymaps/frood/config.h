@@ -22,13 +22,20 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 //#define USE_MATRIX_I2C
 
+/* Select hand configuration */
+
+#define MASTER_LEFT
+// #define MASTER_RIGHT
+// #define EE_HANDS
+
+
 //#define QUICK_TAP_TERM 0
 //#define TAPPING_TERM 100
 
 #ifdef RGBLIGHT_ENABLE
     #define RGBLIGHT_EFFECT_BREATHING
-    #define RGBLIGHT_EFFECT_RAINBOW_MOOD
-    #define RGBLIGHT_EFFECT_RAINBOW_SWIRL
+//    #define RGBLIGHT_EFFECT_RAINBOW_MOOD
+//    #define RGBLIGHT_EFFECT_RAINBOW_SWIRL
     #define RGBLIGHT_EFFECT_SNAKE
     #define RGBLIGHT_EFFECT_KNIGHT
     #define RGBLIGHT_EFFECT_CHRISTMAS
@@ -105,6 +112,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #    undef ENABLE_RGB_MATRIX_MULTISPLASH
 #    undef ENABLE_RGB_MATRIX_SOLID_SPLASH
 #    undef ENABLE_RGB_MATRIX_SOLID_MULTISPLASH
+#    define ENABLE_RGB_MATRIX_STARLIGHT
+#    undef ENABLE_RGB_MATRIX_STARLIGHT_DUAL_HUE
+#    undef ENABLE_RGB_MATRIX_STARLIGHT_DUAL_SAT
+#    define ENABLE_RGB_MATRIX_RIVERFLOW
 #endif
 
 #define OLED_FONT_H "keyboards/crkbd/rev1/keymaps/frood/glcdfont.c"
@@ -118,7 +129,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #define BOTH_SHIFTS_TURNS_ON_CAPS_WORD
 
-#define DYNAMIC_MACRO_SIZE 32
 #define DYNAMIC_MACRO_NO_NESTING
 
 #undef WS2812_DI_PIN
