@@ -49,5 +49,6 @@ enum crkbd_layers {
 #define SC_F2 LSFT(LCTL(KC_F2))
 #define SC_F3 LSFT(LCTL(KC_F3))
 #define SC_F4 LSFT(LCTL(KC_F4))
+#define SC_F5 LSFT(LCTL(KC_F5))
 
 extern bool caps_word_active;
